@@ -1,0 +1,24 @@
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.DatePicker?>
+
+<DialogPane fx:controller="com.example.todolistapp.DialogController"
+            xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+        Здесь могли бы быть наши инструкции
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Краткое описание:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="shortDescField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Подробности:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextArea fx:id="detailsArea" GridPane.rowIndex="1" GridPane.columnIndex="1"
+                      wrapText="true"/>
+            <Label text="Крайний срок:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="deadlinePicker" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>
